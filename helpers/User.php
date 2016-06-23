@@ -15,22 +15,39 @@ class User
 	 * @param 	int    $age;
 	 */
 	protected $firstName;
+	
+	/**
+	 * @var	string $lastName
+	 */
 	protected $lastName;
+	
+	/**
+	 * 
+	 * @var int $age
+	 */
 	protected $age;
+	
+	/**
+	 * 
+	 * @var int $id;
+	 */
+	protected $id;
 	
 	
 	/**
 	 * @brief	creating object, using function __construct;
 	 * 
+	 * @param	int	   $id
 	 * @param 	string $firstName
 	 * @param 	string $lastName
 	 * @param 	int    $age
 	 */
-	public function __construct( $firstName, $lastName, $age)
+	public function __construct( $id, $firstName, $lastName, $age)
 	{
-		$this->firstName 	= 	$firstName;
-		$this->lastName 	= 	$lastName;
-		$this->age 			= 		$age;
+		$this->id			= $id;
+		$this->firstName 	= $firstName;
+		$this->lastName 	= $lastName;
+		$this->age 			= $age;
 	}
 	
 	
@@ -45,6 +62,7 @@ class User
 	}
 	
 	/**
+	 * @brief	getFirstName
 	 * @return	string $this->firstName
 	 */
 	public function getFirstName()
@@ -63,7 +81,19 @@ class User
 	}
 	
 	/**
-	 * return string;
+	 * @brief	setId
+	 * 
+	 * @param int 	id;
+	 */
+	public function setId()
+	{
+		$this->id = $id;
+	}
+	
+	/**
+	 * @brief getLastName
+	 * 
+	 * @return string;
 	 */
 	public function getLastName()
 	{
@@ -71,18 +101,33 @@ class User
 	}
 	
 	/**
-	 * return int age;
+	 * @brief	setAge
+	 * 
+	 * @return int age;
 	 */
 	public function setAge()
 	{
 		$this->age = $age;
 	}
 	
+	/**
+	 * @brief getAge;
+	 * 
+	 * @retun int age
+	 */
 	public function getAge()
 	{
 		return $this->age;
 	}
 	
-	
+	/**
+	 * @brief	Get user id
+	 * 
+	 * @return	int
+	 */
+	public function getId()
+	{
+		return $this->id;
+	}
 	
 }

@@ -15,16 +15,17 @@ $connect=
 //otkude i kak da go connectna:
 $dataBase= "";
 
-	if($connect)
+// 	if($connect)
 		
-		$dataBase = 
-		{
-		print "Connect to database sucsessful";
-		}
-	else
-	{
-		print "Database not connected, try again...";
-	}
+// 		$dataBase = 
+// 		{
+// 		print "Connect to database sucsessful";
+// 		}
+// 	else
+// 	{
+// 		print "Database not connected, try again...";
+// 	}
+
 	
 
 
